@@ -1,0 +1,15 @@
+*{
+ background-color: orangered;
+}
+h1{
+    font-style: italic ;
+    text-align: center;
+    text-shadow: darkblue;
+    font-size: xx-large;
+}
+.video{
+    text-align: center;
+}
+.presentacion{
+text-align: center;
+}
