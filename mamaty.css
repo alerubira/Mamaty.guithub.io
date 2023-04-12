@@ -10,9 +10,11 @@ h1{
 .video{
     text-align: center;
 }
-.presentacion{
-text-align: center;
-}
+
 .botones{
+    position: fixed;top: 0;
+    text-align: center;
+}
+.presentacion{
     text-align: center;
 }
