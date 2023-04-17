@@ -12,8 +12,11 @@ h1{
 }
 
 .botones{
-    position: fixed;top: 0;
+    
     text-align: center;
+}
+.botones2{
+    position: fixed;
 }
 .presentacion{
     text-align: center;
