@@ -1,7 +1,7 @@
 *{
  background-color: orangered;
 }
-h1{
+h1,h3{
     font-style: italic ;
     text-align: center;
     text-shadow: darkblue;
