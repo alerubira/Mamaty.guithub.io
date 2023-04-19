@@ -1,17 +1,11 @@
 *{
  background-color:orangered;
 }
-h1{
+h1,h2{
     font-style: italic ;
     text-align: center;
     text-shadow: darkblue;
     font-size: xx-large;
-}
-h2{
-    font-style: italic ;
-    text-align: center;
-    text-shadow: darkblue;
-    font-size: xx-large; 
 }
 .video{
     text-align: center;
@@ -23,6 +17,7 @@ h2{
 }
 .botones2{
     position: fixed;
+    
 }
 .presentacion{
     text-align: center;
