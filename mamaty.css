@@ -17,7 +17,9 @@ h1,h2{
 }
 .botones2{
     position: fixed;
-    
+    }
+.centrdo{
+    text-align: center;
 }
 .presentacion{
     text-align: center;
