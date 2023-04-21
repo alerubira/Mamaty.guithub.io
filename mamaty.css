@@ -16,6 +16,7 @@ h1,h2{
     text-align: center;
 }
 .botones2{
+    float: left;
     position: fixed;
     }
 .centrdo{
