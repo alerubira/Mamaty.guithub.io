@@ -11,8 +11,8 @@ h1,h2,h3{
     text-align: center;
 }
 
-.botones{
-    
+.botones{ 
+
     text-align: center;
 }
 .botones2{
@@ -24,4 +24,17 @@ h1,h2,h3{
 }
 .presentacion{
     text-align: center;
+}
+.propiedades{
+text-align: center;
+}
+#propiedadChia{
+    display: none;
+}
+
+button{
+    padding: 0; border: none; background: none;
+}
+#propiedadLino{
+    display: none;
 }
