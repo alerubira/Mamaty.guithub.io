@@ -43,3 +43,13 @@ button{
 #propiedadLino{
     display: none;
 }
+.carrusel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 420%;
+    height: 5200px;
+    background-size: cover;
+}
