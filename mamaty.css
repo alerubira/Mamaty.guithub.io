@@ -15,10 +15,10 @@ h1,h2,h3{
 
     text-align: center;
 }
-.botones2{
+/*.botones2{
     
     position: fixed;
-    }
+    }*/
 .centrdo{
     text-align: center;
 }
@@ -49,7 +49,7 @@ button{
     display: flex;
 }
 #imagen {
-    width: 420%;
-    height: 5200px;
-    background-size: cover;
+    width: 420px;
+    height: 520px;
+    
 }
