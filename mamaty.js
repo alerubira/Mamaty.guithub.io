@@ -1,11 +1,14 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        
-        'Imagenes_mamaty\celiaco3.jpg',
-        'Imagenes_mamaty\celiaco7.jpg',
-        'Imagenes_mamaty\celiaco8.jpg',
-        'Imagenes_mamaty\celiaco9.jpg'
+        'imagenes_mamaty/celiaco1.jpg',
+        'imagenes_mamaty/celiaco2.jpg',
+        'imagenes_mamaty/celiaco4.jpg',
+        'imagenes_mamaty/celiaco5.jpg',
+        'Imagenes_mamaty/celiaco3.jpg',
+        'Imagenes_mamaty/celiaco7.jpg',
+        'Imagenes_mamaty/celiaco8.jpg',
+        'Imagenes_mamaty/celiaco9.jpg'
     ];
     let $imagen = document.querySelector('#imagen');
     let posicionActual = 0;
@@ -49,7 +52,13 @@ window.onload = function () {
     $botonSiguiente.addEventListener('click', pasarFoto);
     $botonAnterior.addEventListener('click', retrocederFoto);
     colocarImagen();      
-            
+    /*onsubmit="return validar()"
+      
+    
+    function validar() {
+    …..
+    return return false;
+}*/  
             
      
 }
