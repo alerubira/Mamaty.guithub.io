@@ -59,6 +59,9 @@ window.onload = function () {
     …..
     return return false;
 }*/  
-            
+     //funcion para mostrar y ocultar
+     function mostrar(){
+        
+     }       
      
 }
