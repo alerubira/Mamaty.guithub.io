@@ -1,10 +1,10 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        'imagenes_mamaty/celiaco1.jpg',
-        'imagenes_mamaty/celiaco2.jpg',
-        'imagenes_mamaty/celiaco4.jpg',
-        'imagenes_mamaty/celiaco5.jpg',
+        'Imagenes_mamaty/celiaco1.jpg',
+        'Imagenes_mamaty/celiaco2.jpg',
+        'Imagenes_mamaty/celiaco4.jpg',
+        'Imagenes_mamaty/celiaco5.jpg',
         'Imagenes_mamaty/celiaco3.jpg',
         'Imagenes_mamaty/celiaco7.jpg',
         'Imagenes_mamaty/celiaco8.jpg',
@@ -61,7 +61,7 @@ window.onload = function () {
 }*/  
      //funcion para mostrar y ocultar
      function mostrar(){
-        
+
      }       
      
 }
