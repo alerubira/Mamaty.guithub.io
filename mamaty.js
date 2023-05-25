@@ -59,22 +59,5 @@ window.onload = function () {
     …..
     return return false;
 }*/  
-     //funcion para mostrar y ocultar
-     /*let $propiedades;
-     let $botonChia=documen.querySelector("#botonChia");
-     $botonChia.addEventListener('click',function(){
-     $propiedades=document.querySelector('#propiedadChia');
-     $propiedades.style.display="block";
-     })*/
-     document.getElementById("botonChia").addEventListener("click",function(){
-        document.getElementById("propiedadChia").style.display="block";
-     })
-     function mostrar(){
-
-     } 
-     function ocultar(){
-
-     } 
-
-     
+    
 }
