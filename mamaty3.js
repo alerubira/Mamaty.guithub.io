@@ -1,5 +1,5 @@
 window.onload = function () {
-    let retorno=true;
+    
     let telefono=document.forms["formulario"]["telefono"];
     let mail=document.forms["formulario"]["mail"];
     let nombre=document.forms["formulario"]["nombre"];
@@ -12,26 +12,24 @@ window.onload = function () {
         if(nombre.value==""){
             cartelMal.style.display="block";
             nombre.style.border="3px solid red";
-            retorno= false;
-            return retorno;
+            
         }else{
             nombre.style.border="";
             cartelMal.style.display="none";
-            return validarApellido();
+           validarApellido();
             
         }
-        console.log(retorno);
+        
      }
      function validarApellido(){
         if(apellido.value==""){
             cartelMal.style.display="block";
             apellido.style.border="3px solid red";
-            retorno= false;
-            return retorno;
+            
          }else{
             apellido.style.border="";
             cartelMal.style.display="none";
-            return validarMail();
+             validarMail();
             
          }
      }
@@ -39,28 +37,25 @@ window.onload = function () {
           if(mail.value==""){
             cartelMal.style.display="block";
             mail.style.border="3px solid red";
-            retorno= false;
-            return retorno;
+            
           }else{
             mail.style.border="";
             cartelMal.style.display="none";
-            return validarTelefono();
+            validarTelefono();
             
           }
      }
      function validarTelefono(){
-        if(telefono.value==""){
+        if(telefono.value==""||isNaN(telefono.value)){
             cartelMal.style.display="block";
             telefono.style.border="3px solid red";
-            retorno= false;
-            return retorno;
+            
           }else{
             telefono.style.border="";
             cartelEnvio.style.display="block";
             cartelMal.style.display="none";
-            retorno= false;
-            return retorno;
+            document.querySelector("#formulario").submit();
           }
      }
-     console.log(retorno);
+     
 }
