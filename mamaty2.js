@@ -4,27 +4,40 @@
     let propiedad;
 
     document.getElementById("botonChia").addEventListener("click",function(){
+        limpiar();
         propiedad=document.querySelector('#propiedadChia');
         mostrar(propiedad,$botonLimpiar1);
-        
-    })
-    $botonLimpiar1.addEventListener('click',function(){
+        })
+     document.getElementById("botonSesamo").addEventListener("click",function(){
+            limpiar();
+            propiedad=document.querySelector('#propiedadSesamo');
+            mostrar(propiedad,$botonLimpiar1);
+         })
+    document.getElementById("botonAmapola").addEventListener("click",function(){
+           limpiar();
+            propiedad=document.querySelector('#propiedadAmapola');
+            mostrar(propiedad,$botonLimpiar1);
+        })
+   document.getElementById("botonLino").addEventListener("click",function(){
+            limpiar();
+            propiedad=document.querySelector('#propiedadLino');
+            mostrar(propiedad,$botonLimpiar1);
+        })
+    $botonLimpiar1.addEventListener('click',function limpiar(){
         propiedad.style.display="none";
         $botonLimpiar1.style.display="none"; 
     })
-     
+
+    
      function mostrar(propiedad,$botonLimpiar1){
-        if(propiedad.style.display="none"){
-            propiedad.style.display="block";
-            $botonLimpiar1.style.display="block";
+        
+                propiedad.style.display="block";
+                $botonLimpiar1.style.display="block";
+            
+            
         }
          
         
-     } 
-     function ocultar(propiedad){
-        if(propiedad.style.display="block"){
-            propiedad.style.display="none";
-        }
-     } 
+    
     }
      
