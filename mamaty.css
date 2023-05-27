@@ -68,3 +68,13 @@ button{
 #malEscrito{
     display: none;
 }
+#cartelConfirmacion{
+    position: absolute;
+  top: 13%;
+  right:50%;
+  width:0 ;
+  height: 20%;
+}.botones3{
+    padding-left: 5px;
+    padding-right: 5px;
+}

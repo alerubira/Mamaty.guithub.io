@@ -7,7 +7,7 @@ window.onload = function () {
     let cartelMal=document.querySelector('#malEscrito');
     let cartelEnvio=document.querySelector('#cartelDeEnvio');
     let botonEnviar=document.querySelector("#botonEnviarFormulario");
-    //botonEnviar.addEventListener('click',validarNombre);
+    botonEnviar.addEventListener('click',validarNombre);
     function validarNombre(){
         if(nombre.value==""||!isNaN(nombre.value)){
             cartelMal.style.display="block";
