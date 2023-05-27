@@ -22,7 +22,7 @@
     
     <div><h4>Sugerencias</h4>
         <div >
-            <form name="formulario" action="/action_page.php"  method="post">
+            <form name="formulario" action="/action_page.php"onsubmit="return validarNombre()  method="post">
                 <label for="GET-nombre">Nombre :</label>
                 <input id="GET-nombre" type="text" name="nombre"></div>
             <div><label for="GET-nombre1">Apellido:</label>
@@ -32,8 +32,9 @@
             <div><label for="GET-nombre3">Telefono:</label>
                 <input id="GET-nombre3" type="tel" name="telefono"></div>
             <textarea name="Sugerencias" id="sugerencias" cols="100" rows="30"></textarea>
+            <input type="submit" value="Enviar">
         </form>
-        <button type="submit" id="botonEnviarFormulario">Enviar</button>
+        
           
     </div>
     <p id="cartelDeEnvio">Envio Exitoso</p>
