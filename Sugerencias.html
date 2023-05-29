@@ -26,7 +26,7 @@
             <p id="cartelDeEnvio">Envio Exitoso</p>
             <p id="malEscrito">Texto mal completado</p>
         </div>
-            <form name="formulario" action="" onsubmit="validarNombre()" method="post">
+            <form novalidate name="formulario" action="" onsubmit="return validarNombre()" method="post">
                 <label for="GET-nombre">Nombre :</label>
                 <input id="GET-nombre" type="text" name="nombre"></div>
             <div><label for="GET-nombre1">Apellido:</label>
@@ -36,10 +36,10 @@
             <div><label for="GET-nombre3">Telefono:</label>
                 <input id="GET-nombre3" type="tel" name="telefono"></div>
             <textarea name="Sugerencias" id="sugerencias" cols="100" rows="30"></textarea>
-            <!--<input type="submit" value="Enviar">-->
+            <input type="submit" value="Enviar">
         </form>
         
-          <button id="botonEnviarFormulario"type="button">Enviar</button>
+        <!--<button id="botonEnviarFormulario"type="button">Enviar</button>-->  
     </div>
     
     <script src="mamaty3.js"></script>

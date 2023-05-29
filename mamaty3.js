@@ -1,4 +1,4 @@
-window.onload = function () {
+//window.onload = function () {
     
     let telefono=document.forms["formulario"]["telefono"];
     let mail=document.forms["formulario"]["mail"];
@@ -7,9 +7,11 @@ window.onload = function () {
     let cartelMal=document.querySelector('#malEscrito');
     let cartelEnvio=document.querySelector('#cartelDeEnvio');
     let botonEnviar=document.querySelector("#botonEnviarFormulario");
-    botonEnviar.addEventListener('click',validarNombre);
+    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    //botonEnviar.addEventListener('click',validarNombre);
     function validarNombre(){
         if(nombre.value==""||!isNaN(nombre.value)){
+          cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             nombre.style.border="3px solid red";
             return false;
@@ -23,6 +25,7 @@ window.onload = function () {
      }
      function validarApellido(){
         if(apellido.value==""||!isNaN(nombre.value)){
+          cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             apellido.style.border="3px solid red";
             return false;
@@ -34,7 +37,8 @@ window.onload = function () {
          }
      }
      function validarMail(){
-          if(mail.value==""){
+          if(mail.value==""|| emailRegExp !=mail.value){
+            cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             mail.style.border="3px solid red";
             return false;
@@ -46,8 +50,9 @@ window.onload = function () {
           }
      }
      function validarTelefono(){
-     console.log(telefono.lenght); 
+      
         if(isNaN(telefono.value)){
+          cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             telefono.style.border="3px solid red";
             return false;
@@ -55,9 +60,9 @@ window.onload = function () {
             telefono.style.border="";
             cartelEnvio.style.display="block";
             cartelMal.style.display="none";
-            document.querySelector("#formulario").submit();
+            //document.querySelector("#formulario").submit();
             return false;
           }
      }
      
-}
+//}
