@@ -1,4 +1,4 @@
-//window.onload = function () {
+
     
     let telefono=document.forms["formulario"]["telefono"];
     let mail=document.forms["formulario"]["mail"];
@@ -7,8 +7,9 @@
     let cartelMal=document.querySelector('#malEscrito');
     let cartelEnvio=document.querySelector('#cartelDeEnvio');
     let botonEnviar=document.querySelector("#botonEnviarFormulario");
-    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    //botonEnviar.addEventListener('click',validarNombre);
+    
+      let emailCodigo= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
     function validarNombre(){
         if(nombre.value==""||!isNaN(nombre.value)){
           cartelEnvio.style.display="none";
@@ -37,7 +38,7 @@
          }
      }
      function validarMail(){
-          if(mail.value==""|| emailRegExp !=mail.value){
+          if(mail.value==""|| !(emailCodigo.test(mail.value)) ){
             cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             mail.style.border="3px solid red";
@@ -60,9 +61,11 @@
             telefono.style.border="";
             cartelEnvio.style.display="block";
             cartelMal.style.display="none";
-            //document.querySelector("#formulario").submit();
+            telefono.value="";
+            mail.value="";
+            nombre.value="";
+            apellido.value="";
             return false;
           }
      }
      
-//}
