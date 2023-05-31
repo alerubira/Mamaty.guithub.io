@@ -6,8 +6,8 @@
     let apellido=document.forms["formulario"]["apellido"];
     let cartelMal=document.querySelector('#malEscrito');
     let cartelEnvio=document.querySelector('#cartelDeEnvio');
-    let botonEnviar=document.querySelector("#botonEnviarFormulario");
     
+    let datos=document.querySelector("#datosEnviados");
       let emailCodigo= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     function validarNombre(){
@@ -52,7 +52,7 @@
      }
      function validarTelefono(){
       
-        if(isNaN(telefono.value)){
+        if(isNaN(telefono.value)||telefono.value.length<5){
           cartelEnvio.style.display="none";
             cartelMal.style.display="block";
             telefono.style.border="3px solid red";
@@ -61,6 +61,10 @@
             telefono.style.border="";
             cartelEnvio.style.display="block";
             cartelMal.style.display="none";
+            
+            let n=document.createElement("p");
+            n.innerText=nombre.value;
+            datos.appendChild(n);
             telefono.value="";
             mail.value="";
             nombre.value="";
@@ -68,4 +72,4 @@
             return false;
           }
      }
-     
+      
