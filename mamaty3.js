@@ -6,7 +6,7 @@
     let apellido=document.forms["formulario"]["apellido"];
     let cartelMal=document.querySelector('#malEscrito');
     let cartelEnvio=document.querySelector('#cartelDeEnvio');
-    
+    let catrelSugerencia=document.forms["formulario"]["sugerencias"];
     let datos=document.querySelector("#datosEnviados");
       let emailCodigo= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
@@ -63,12 +63,23 @@
             cartelMal.style.display="none";
             
             let n=document.createElement("p");
+            let a=document.createElement("p");
+            let t=document.createElement("p");
+            let e=document.createElement("p");
             n.innerText=nombre.value;
+            a.innerText=apellido.value;
+            t.innerText=telefono.value;
+            e.innerText=mail.value;
             datos.appendChild(n);
+            datos.appendChild(a);
+            datos.appendChild(t);
+            datos.appendChild(e);
+            datos.style.display="block";
             telefono.value="";
             mail.value="";
             nombre.value="";
             apellido.value="";
+            catrelSugerencia.value="";
             return false;
           }
      }

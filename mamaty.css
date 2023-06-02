@@ -69,7 +69,12 @@ button{
   right:50%;
   width:0 ;
   height: 20%;
-}.botones3{
+}
+.botones3{
     margin-left: 5px;
     margin-right: 5px;
 }
+#datosEnviados{
+    display: none;
+}
+
