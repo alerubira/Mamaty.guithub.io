@@ -32,7 +32,7 @@
             return false;
          }else{
             apellido.style.border="";
-            cartelMal.style.display="none";
+            cartelMalC
              return validarMail();
             
          }
