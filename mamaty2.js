@@ -23,6 +23,26 @@
             propiedad=document.querySelector('#propiedadLino');
             mostrar(propiedad,$botonLimpiar1);
         })
+  document.getElementById("botonSen").addEventListener("click",function(){
+            limpiar();
+            propiedad=document.querySelector('#propiedadSen');
+            mostrar(propiedad,$botonLimpiar1);
+            })
+    document.getElementById("botonMelisa").addEventListener("click",function(){
+                limpiar();
+                propiedad=document.querySelector('#propiedadMelisa');
+                mostrar(propiedad,$botonLimpiar1);
+                })
+    document.getElementById("botonAjenjo").addEventListener("click",function(){
+                    limpiar();
+                    propiedad=document.querySelector('#propiedadAjenjo');
+                    mostrar(propiedad,$botonLimpiar1);
+                    })
+    document.getElementById("botonBardana").addEventListener("click",function(){
+                        limpiar();
+                        propiedad=document.querySelector('#propiedadBardana');
+                        mostrar(propiedad,$botonLimpiar1);
+                        })   
     $botonLimpiar1.addEventListener('click',limpiar);
 
     
