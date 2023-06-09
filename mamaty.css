@@ -100,3 +100,17 @@ button{
     margin-bottom: 2px;
 
 }
+#contenedorPrincipal{
+    display: flex;
+}
+#contenedorPrincipal > div{
+    margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+#contenedorSecundario{
+    display: flex;
+}
+#contenedorSecundario >div{
+    margin:2px;
+}
