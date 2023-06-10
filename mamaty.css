@@ -7,18 +7,13 @@ h1,h2,h3{
     text-shadow: darkblue;
     font-size: xx-large;
 }
-/*.video{
-    text-align: center;
-}*/
+
 
 .botones{ 
 
     text-align: center;
 }
-/*.botones2{
-    
-    position: fixed;
-    }*/
+
 .centrdo{
     text-align: center;
 }
@@ -47,6 +42,7 @@ button{
     width: 100%;
     height: 800px;
     background-size: cover;
+    border-radius: 3px;
 }
 #propiedadSesamo{
     display: none;
@@ -70,9 +66,12 @@ button{
   width:0 ;
   height: 20%;
 }
+.botones2{
+    text-align: center;
+}
 .botones3{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #datosEnviados{
     display: none;
@@ -100,17 +99,29 @@ button{
     margin-bottom: 2px;
 
 }
-#contenedorPrincipal{
+.contenedorPrincipal{
     display: flex;
+    
 }
-#contenedorPrincipal > div{
-    margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
+
 #contenedorSecundario{
     display: flex;
 }
-#contenedorSecundario >div{
-    margin:2px;
+
+.contenido{
+    flex: 70%;
+    
 }
+.video{
+    flex: 30%;
+    text-align: center;
+}
+
+.direccion,.contacto{
+    flex: 50%;
+    text-align: center;
+}
+#contenedorPropiedades{
+    display: flex;
+}
+

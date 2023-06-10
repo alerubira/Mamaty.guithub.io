@@ -1,4 +1,4 @@
-window.onload = function () {
+//window.onload = function () {
     // Variables
     const IMAGENES = [
         'Imagenes_mamaty/celiaco1.jpg',
@@ -60,4 +60,4 @@ window.onload = function () {
     return return false;
 }*/  
     
-}
+//}
