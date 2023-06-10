@@ -11,6 +11,9 @@
       let emailCodigo= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     function validarNombre(){
+      while (datos.firstChild) {
+        datos.removeChild(datos.firstChild);
+      }
         if(nombre.value==""||!isNaN(nombre.value)){
           cartelEnvio.style.display="none";
             cartelMal.style.display="block";

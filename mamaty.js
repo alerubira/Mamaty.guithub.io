@@ -1,4 +1,4 @@
-//window.onload = function () {
+
     // Variables
     const IMAGENES = [
         'Imagenes_mamaty/celiaco1.jpg',
@@ -40,24 +40,13 @@
         colocarImagen();
     }
     /**
-             * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
+             * Funcion que actualiza la imagen  dependiendo de posicionActual
              */
     function colocarImagen () {
         $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
     
-        //$imagen.innerHTML=IMAGENES[posicionActual];
-       //$imagen.src = "Imagenes_mamaty\celiaco4.jpg";
-       //$imagen.document.IMAGENES[posicionActual];
+        
     }
     $botonSiguiente.addEventListener('click', pasarFoto);
     $botonAnterior.addEventListener('click', retrocederFoto);
     colocarImagen();      
-    /*onsubmit="return validar()"
-      
-    
-    function validar() {
-    …..
-    return return false;
-}*/  
-    
-//}
